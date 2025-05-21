@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import ThemeModeToggle from "@/components/ThemeModeToggle";
+import SideBarToggle from "@/components/SideBarToggle";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -28,7 +29,8 @@ export default function RootLayout({
     <html>
       <body>
         <ThemeProvider>
-          <ThemeModeToggle/>
+          {/* <ThemeModeToggle/> */}
+          <SideBarToggle/>
           {children}
         </ThemeProvider>
       </body>

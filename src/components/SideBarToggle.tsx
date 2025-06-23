@@ -4,9 +4,13 @@ import { Button } from './ui/button';
 
 const SideBarToggle = () => {
   return (
-    <Button variant="ghost" className='absolute top-2.5 left-5 z-50'>
+    <button>
       <Menu size={32}/>
-    </Button>
+
+    </button>
+    // <Button variant="ghost" className='absolute top-2.5 left-5 z-50 p-0 m-0 '>
+      
+    // </Button>
   )
 }
 

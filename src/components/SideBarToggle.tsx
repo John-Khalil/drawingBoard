@@ -11,7 +11,7 @@ const SideBarToggle = () => {
       </button> */}
       <Button variant="ghost" className=' z-50 p-0 m-2 ' size="icon" asChild
         onClick={()=>{
-          console.log("test")
+          // console.log("test")
         }}
       >
         <Menu size={64}/>

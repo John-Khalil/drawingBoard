@@ -8,6 +8,7 @@ import SideBarToggle from "@/components/SideBarToggle";
 import { Provider } from "react-redux";
 // import store from "reduxStore/store"
 import store from "./reduxStore/store"; 
+import SideBar from "@/components/SideBar";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
           {/* <ThemeProvider> */}
             {/* <ThemeModeToggle/> */}
             <SideBarToggle/>
+            <SideBar/>
             {children}
           {/* </ThemeProvider> */}
         </Provider>

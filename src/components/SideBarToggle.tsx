@@ -1,8 +1,14 @@
 import React from 'react'
 import { Menu } from 'lucide-react';
 import { Button } from './ui/button';
+import { useDispatch, UseDispatch, useSelector } from 'react-redux';
+import { openSideBar,closeSideBar } from '@/app/reduxStore/sideBarSlice';
+import { UseSelector } from 'react-redux';
+import { sideBarState } from '@/app/reduxStore/store';
 
 const SideBarToggle = () => {
+  const dispatch=useDispatch();
+  const isOpened=useSelector((state:sideBarState)=>state.sideBar.isOpened);
   return (
     <div className='flex items-center'>
       {/* <button>
@@ -11,7 +17,7 @@ const SideBarToggle = () => {
       </button> */}
       <Button variant="ghost" className=' z-50 p-0 m-2 ' size="icon" asChild
         onClick={()=>{
-          // console.log("test")
+          isOpened?dispatch(closeSideBar()):dispatch(openSideBar())
         }}
       >
         <Menu size={64}/>

@@ -9,5 +9,5 @@ const store=configureStore({
   }
 });
 
-export type sideBarState = ReturnType<typeof store.getState>;
+export type reduxStoreState = ReturnType<typeof store.getState>;
 export default store;

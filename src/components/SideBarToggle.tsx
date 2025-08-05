@@ -4,11 +4,11 @@ import { Button } from './ui/button';
 import { useDispatch, UseDispatch, useSelector } from 'react-redux';
 import { openSideBar,closeSideBar } from '@/app/reduxStore/sideBarSlice';
 import { UseSelector } from 'react-redux';
-import { sideBarState } from '@/app/reduxStore/store';
+import { reduxStoreState } from '@/app/reduxStore/store';
 
 const SideBarToggle = () => {
   const dispatch=useDispatch();
-  const isOpened=useSelector((state:sideBarState)=>state.sideBar.isOpened);
+  const isOpened=useSelector((state:reduxStoreState)=>state.sideBar.isOpened);
   return (
     <div className='flex items-center'>
       {/* <button>
